@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableCell?>
+<?import javafx.scene.control.TableColumn?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.thi1.HelloController">
+    <TableView fx:id="myTableView" prefWidth="300.0" prefHeight="400.0">
+        <columns>
+            <TableColumn fx:id="Id" text="ID" prefWidth="50.0"/>
+            <TableColumn fx:id="Name" text="Name" prefWidth="100.0"/>
+            <TableColumn fx:id="Age" text="Age" prefWidth="50.0"/>
+            <TableColumn fx:id="Address" text="Adress" prefWidth="50.0"/>
+            <TableColumn fx:id="Gender" text="Gender" prefWidth="50.0"/>
+        </columns>
+    </TableView>
+    <Label text="ID" />
+    <TextField fx:id="IdInput" promptText="enter ID " />
+    <Label text="Ten" />
+    <TextField fx:id="NameInput" promptText="Enter name " />
+    <Label text="Tuoi" />
+    <TextField fx:id="AgeInput" promptText="Enter age " />
+    <Label text="Adreess" />
+    <TextField fx:id="AddressInput" promptText="enter address " />
+    <Label text="Gender" />
+    <TextField fx:id="GenderInput" promptText="enter gender " />
+    <HBox>
+        <Button text="Submit" onAction="#SubmitData"/>
+        <Button text="ShowAll" onAction="#ShowData"/>
+        <Button text="Delete" onAction="#DeleteData"/>
+    </HBox>
+
+</VBox>
